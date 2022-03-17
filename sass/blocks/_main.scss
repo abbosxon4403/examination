@@ -1,0 +1,107 @@
+.main {
+    padding-top: 73px;
+    padding-bottom: 100px;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    &__box {
+        display: flex;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+    .main__boxes {
+        display: flex;
+        background-color: #eeeeee;
+        min-width: 570px;
+        min-height: 278px;
+        align-items: center;
+        margin-bottom: 68px;
+        position: relative;
+    }
+    .main__img-link {
+        mix-blend-mode: darken;
+    }
+    &__content {
+        margin-left: 31px;
+    }
+    .main__heading-link {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #4B4844;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 127.5%;
+        letter-spacing: 0.1em;
+        color: #4B4844;
+        max-width: 259px;
+        padding-right: 12px;
+    }
+    &__buttons {
+        text-align: center;
+        align-items: center;
+        margin-top: 60px;
+        .no-border {
+            font-family: 'roboto', 'Arial', sans-serif;
+            border: none;
+            background-color: transparent;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 110%;
+            /* or 22px */
+            align-items: center;
+            color: rgba(52, 52, 52, 0.5);
+        }
+        .main__top-btns {
+            margin-bottom: 60px;
+        }
+        .main__bottom-btn {
+            width: 188px;
+            height: 43px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background-color: #ff9619;
+            border: none;
+        }
+    }
+}
+
+// desktop
+@media only screen and (max-width: 376px) {
+    .main {
+        &__box {
+            justify-content: space-between;
+            .main__boxes {
+                min-width: 0;
+                min-height: 0;
+                min-width: 160px;
+                min-height: 165px;
+                margin-right: 30px;
+                align-items: center;
+            }
+            .main__img {
+                max-width: 159px;
+                height: auto;
+            }
+            .main__text {
+                display: none;
+            }
+            .main__heading {
+                position: absolute;
+                top: 154px;
+                left: 25%;
+                font-size: 16px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
