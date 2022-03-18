@@ -112,6 +112,7 @@
         &__container {
             max-width: 148px;
             display: block;
+            margin-bottom: 138px;
         }
         &__container::before {
             font-weight: 800;
@@ -119,9 +120,9 @@
             transform: translateX(70px) translateY(-150px);
         }
         .footer__logo-link {
-            display: none;
-            padding: 0;
-            margin: 0;
+            position: absolute;
+            top: 550px;
+            left: 90px;
         }
         .footer__lists {
             transform: translateX(-35%);

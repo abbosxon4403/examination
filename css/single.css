@@ -1174,6 +1174,7 @@ template {
   .footer__container {
     max-width: 148px;
     display: block;
+    margin-bottom: 138px;
   }
   .footer__container::before {
     font-weight: 800;
@@ -1182,9 +1183,9 @@ template {
             transform: translateX(70px) translateY(-150px);
   }
   .footer .footer__logo-link {
-    display: none;
-    padding: 0;
-    margin: 0;
+    position: absolute;
+    top: 550px;
+    left: 90px;
   }
   .footer .footer__lists {
     -webkit-transform: translateX(-35%);
@@ -1457,14 +1458,18 @@ template {
   border-left: 1px solid rgba(52, 52, 52, 0.2);
 }
 
+.download .download__content-btns {
+  max-width: 1178px;
+}
+
 .download__contents {
-  max-width: 1162px;
+  max-width: 1188px;
   border: 1px solid #34f4f4;
   border-top: none;
-  margin-right: 20px;
+  margin-right: 22px;
   padding-top: 25px;
-  padding-left: 70px;
-  padding-right: 23px;
+  padding-left: 50px;
+  padding-right: 20px;
   padding-bottom: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1624,10 +1629,29 @@ template {
     max-width: 340px;
     height: 53px;
     margin-right: 20px;
+    position: relative;
+  }
+  .download__btn::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 8px;
+    background-image: url(/img/arrow-down-btn.png);
+    background-size: cover;
+    position: absolute;
+    right: 30px;
+  }
+  .download__btn2::before {
+    right: 130px;
   }
   .download__btn2 {
     min-width: 340px;
     border-right: 1px solid rgba(52, 52, 52, 0.2);
+  }
+  __container {
+    max-width: 148px;
+    display: block;
+    margin-bottom: 138px;
   }
 }
 /*# sourceMappingURL=single.css.map */

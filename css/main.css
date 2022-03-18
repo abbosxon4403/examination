@@ -1174,11 +1174,18 @@ template {
   .footer__container {
     max-width: 148px;
     display: block;
+    margin-bottom: 138px;
+  }
+  .footer__container::before {
+    font-weight: 800;
+    font-size: 80px;
+    -webkit-transform: translateX(70px) translateY(-150px);
+            transform: translateX(70px) translateY(-150px);
   }
   .footer .footer__logo-link {
-    display: none;
-    padding: 0;
-    margin: 0;
+    position: absolute;
+    top: 550px;
+    left: 90px;
   }
   .footer .footer__lists {
     -webkit-transform: translateX(-35%);
