@@ -1175,6 +1175,12 @@ template {
     max-width: 148px;
     display: block;
   }
+  .footer__container::before {
+    font-weight: 800;
+    font-size: 80px;
+    -webkit-transform: translateX(70px) translateY(-150px);
+            transform: translateX(70px) translateY(-150px);
+  }
   .footer .footer__logo-link {
     display: none;
     padding: 0;
